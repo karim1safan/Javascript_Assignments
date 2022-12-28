@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // to select element by id and style with the color red
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // when the page loaded select element by id and style with the color red
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // this code doesn't work because the script tage doesn't write in body 
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
